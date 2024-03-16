@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -18,12 +19,18 @@ const page = () => {
                             <div className='gogo-logo mb-8'></div>
                             <h3 className='text-lg font-semibold text-[#3a3a3a]'>LOGIN</h3>
                             <div className='flex flex-col gap-2 w-full mt-8'>
-                                <label htmlFor="email" className='text-[#3a3a3a] text-base font-medium'>E-mail</label>
+                                <label htmlFor="email" className='text-[#3a3a3a] text-sm font-medium'>E-mail</label>
                                 <input type="email" name='email' className='border p-1.5 rounded border-[#d7d7d7] text-sm text-[#3a3a3a] outline-none'/>
                             </div>
                             <div className='flex flex-col gap-2 w-full mt-4'>
-                                <label htmlFor="password" className='text-[#3a3a3a] text-base font-medium'>Password</label>
+                                <label htmlFor="password" className='text-[#3a3a3a] text-sm font-medium'>Password</label>
                                 <input type="password" name='password' className='border p-1.5 rounded border-[#d7d7d7] text-sm text-[#3a3a3a] outline-none'/>
+                            </div>
+                            <div className="w-full flex items-center justify-between mt-6">
+                                <Link href="#" className='text-sm text-[#3a3a3a] hover:text-[#00365a]'>
+                                    Forget Password?
+                                </Link>
+                                <button type="button" className='uppercase bg-[#00365a] text-sm font-semibold w-28 login-btn py-2.5 text-white rounded-3xl border border-[#00365a] transition-colors hover:bg-[#001e31] hover:border-[#001e31]'>login</button>
                             </div>
                         </div>
                     </div>
