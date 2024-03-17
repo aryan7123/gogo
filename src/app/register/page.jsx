@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -32,8 +33,11 @@ const page = () => {
                             <label htmlFor="confirmPassword" className='text-[#3a3a3a] text-sm font-medium'>Confirm Password</label>
                             <input type="password" name='confirmPassword' className='border p-1.5 rounded border-[#d7d7d7] text-sm text-[#3a3a3a] outline-none'/>
                         </div>
-                        <div className="w-full flex items-end justify-end mt-6">
-                            <button type="button" className='uppercase bg-[#00365a] text-sm font-semibold w-28 login-btn py-2.5 text-white rounded-3xl border border-[#00365a] transition-colors hover:bg-[#001e31] hover:border-[#001e31]'>register</button>
+                        <div className="w-full flex items-center justify-between mt-6">
+                            <Link href="/login" className='text-sm text-[#3a3a3a] hover:text-[#00365a]'>
+                                Already have an account. Login?
+                            </Link>
+                            <button type="button" className='uppercase bg-[#00365a] text-sm font-semibold w-28 login-btn py-2.5 text-white rounded-3xl border border-[#00365a] transition-colors hover:bg-[#001e31] hover:border-[#001e31]'>login</button>
                         </div>
                     </div>
                 </div>
