@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 
 const page = () => {
   return (
@@ -23,7 +24,10 @@ const page = () => {
                         </div>
                         <div className='flex flex-col gap-2 w-full mt-4'>
                             <label htmlFor="password" className='text-[#3a3a3a] text-sm font-medium'>Password</label>
-                            <input type="password" name='password' className='border p-1.5 rounded border-[#d7d7d7] text-sm text-[#3a3a3a] outline-none'/>
+                            <div className='flex items-center justify-between border p-1.5 rounded border-[#d7d7d7]'>
+                                <input type="password" name='password' className='w-full text-sm text-[#3a3a3a] outline-none'/>
+                                <FaRegEye size={16} className='cursor-pointer mr-1.5'/>
+                            </div>
                         </div>
                         <div className="w-full flex items-center justify-between mt-6">
                             <Link href="/forgot-password" className='text-sm text-[#3a3a3a] hover:text-[#00365a]'>

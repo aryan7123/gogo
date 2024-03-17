@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 
 const page = () => {
   return (
@@ -19,11 +20,17 @@ const page = () => {
                         <h3 className='text-lg font-semibold text-[#3a3a3a]'>RESET PASSWORD</h3>
                         <div className='flex flex-col gap-2 w-full mt-8'>
                             <label htmlFor="password" className='text-[#3a3a3a] text-sm font-medium'>Password</label>
-                            <input type="password" name='password' className='border p-1.5 rounded border-[#d7d7d7] text-sm text-[#3a3a3a] outline-none'/>
+                            <div className='flex items-center justify-between border p-1.5 rounded border-[#d7d7d7]'>
+                                <input type="password" name='password' className='w-full text-sm text-[#3a3a3a] outline-none'/>
+                                <FaRegEye size={16} className='cursor-pointer mr-1.5'/>
+                            </div>
                         </div>
                         <div className='flex flex-col gap-2 w-full mt-4'>
                             <label htmlFor="confirmPassword" className='text-[#3a3a3a] text-sm font-medium'>Confirm Password</label>
-                            <input type="password" name='confirmPassword' className='border p-1.5 rounded border-[#d7d7d7] text-sm text-[#3a3a3a] outline-none'/>
+                            <div className='flex items-center justify-between border p-1.5 rounded border-[#d7d7d7]'>
+                                <input type="password" name='confirmPassword' className='w-full text-sm text-[#3a3a3a] outline-none'/>
+                                <FaRegEye size={16} className='cursor-pointer mr-1.5'/>
+                            </div>
                         </div>
                         <div className="w-full flex items-center justify-end mt-6">
                             <button type="button" className='uppercase bg-[#00365a] text-sm font-semibold w-28 login-btn py-2.5 text-white rounded-3xl border border-[#00365a] transition-colors hover:bg-[#001e31] hover:border-[#001e31]'>reset</button>
