@@ -30,9 +30,14 @@ const page = () => {
                             </div>
                         </div>
                         <div className="w-full flex items-center justify-between mt-6">
-                            <Link href="/forgot-password" className='text-sm text-[#3a3a3a] hover:text-[#00365a]'>
-                                Forget Password?
-                            </Link>
+                            <div className='flex flex-col gap-1.5'>
+                                <Link href="/forgot-password" className='text-sm font-medium text-[#3a3a3a] hover:text-[#00365a]'>
+                                    Forget Password?
+                                </Link>
+                                <Link href="/register" className='text-sm font-medium text-[#3a3a3a] hover:text-[#00365a]'>
+                                    Don`t have an account? Register 
+                                </Link>
+                            </div>
                             <button type="button" className='uppercase bg-[#00365a] text-sm font-semibold w-28 login-btn py-2.5 text-white rounded-3xl border border-[#00365a] transition-colors hover:bg-[#001e31] hover:border-[#001e31]'>login</button>
                         </div>
                     </div>
